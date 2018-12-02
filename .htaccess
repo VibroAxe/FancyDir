@@ -4,10 +4,10 @@ Options +Indexes
 IndexOptions +FancyIndexing +FoldersFirst +XHTML +HTMLTable +SuppressRules +IgnoreCase +SuppressHTMLPreamble +SuppressDescription
 IndexOptions +IconsAreLinks +IconHeight=16 +IconWidth=16 +NameWidth=*
 
-IndexIgnore .htaccess /fancydir
+IndexIgnore .htaccess /fancydir readme.html
 
 HeaderName /fancydir/header.shtml
-ReadmeName /fancydir/footer.shtml
+ReadmeName readme.html
 
 #Allow SSI
 Options +Includes

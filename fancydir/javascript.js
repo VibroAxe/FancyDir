@@ -1,4 +1,4 @@
-(function(){
+window.onload = function(){
 function addEvent(obj, type, fn) {
 	if (obj.addEventListener){
 		obj.addEventListener( type, fn, false );
@@ -73,12 +73,12 @@ heading.parentNode.insertBefore(searchBox, heading);
 
 
 //Turn directory name into breadcrumb links
-var breadcrumbs = heading.innerHTML.match(/[^:]*: (.*)\//)[1].split('/');
+var breadcrumbs = heading.innerHTML.split("?")[0].match(/[^:]*: (.*)\//)[1].split('/');
 var pathsofar = document.location.protocol + '//';
 
 for (i in breadcrumbs) {
 	pathsofar += breadcrumbs[i] + '/';
 	breadcrumbs[i] = ('<a href="' + pathsofar + '">' + decodeURI(breadcrumbs[i]) + '</a>');
 }
-heading.innerHTML = heading.innerHTML.replace(/: (.*)\//, ': ' + breadcrumbs.join('/') + '/');
-})();
+heading.innerHTML = heading.innerHTML.replace(/: (.*)/, ': ' + breadcrumbs.join(' / ') + ' /');
+};

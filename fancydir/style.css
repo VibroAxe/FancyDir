@@ -4,7 +4,7 @@
 html { background-color: #AABAC5; }
 body { font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 62.5%; line-height:1.8em; padding:0 15px; }
 
-#page { margin:15px auto; padding:10px; color:#444; background-color:#fff; border:1px solid; font-size:1.2em; }
+.pagebox { margin:15px auto; padding:10px; color:#444; background-color:#fff; border:1px solid; font-size:1.2em; }
 
 h1 { font-size:1.8em; color:#4C7EB1; line-height:1; margin:0 0 .5em; font-weight:400; }
 h1 a { font-weight:normal; text-decoration:underline; }
@@ -28,6 +28,8 @@ td+td {width: auto; }
 td+td+td {width: 20%; }
 td+td+td+td {width: 10%; }
 td+td+td+td+td  { display:none; } /* Fully supress the description column */ 
+
+.pagebox ol { padding-inline-start: 2em }
 
 #filter {
 float:right;
